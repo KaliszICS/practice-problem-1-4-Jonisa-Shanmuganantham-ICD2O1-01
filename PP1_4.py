@@ -6,7 +6,7 @@
 '''
 
 def q1():
-  word = input("Input a word: ") 
+  word = input("Input a word: ")  
   print(word)
 
 def q2():
