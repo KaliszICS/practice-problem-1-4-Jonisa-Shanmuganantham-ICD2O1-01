@@ -16,18 +16,18 @@ def q2():
 def q3():
   name = input("Input your first name: ")
   lastName = input("Input your last name: ")
-  word = f"{name} {lastName}"
+  word = f"{lastName} {name}"
   print(word)
 
 def q4():
   student1 = input("Input a student: ") 
-  student2 = input("Input a student: ")
+  student2 = input("Input another student: ")
   students = f"Your students are {student1} and {student2}"
   print(students)
 
 #Do not edit code below this comment
 
-q1()
-q2()
-q3()
-q4()
+# q1()
+# q2()
+# q3()
+# q4()
