@@ -10,6 +10,7 @@ def test_q1_1(capsys):
   except:
     sys.exit()
 
+<<<<<<< HEAD
   input_values = ["word"]
   
   def mock_input(s):
@@ -18,6 +19,11 @@ def test_q1_1(capsys):
   PP1_4.input = mock_input
   
   PP1_4.q1()
+=======
+  q1()
+  # captured = capsys.readouterr()
+  sys.stderr.write("word\n")
+>>>>>>> a3eda75 (last commit)
   captured = capsys.readouterr()
   assert captured.out == "Input a word: word\n"
 
@@ -29,6 +35,7 @@ def test_q1_1(capsys):
   except:
     sys.exit()
 
+<<<<<<< HEAD
   input_values = ["help"]
   
   def mock_input(s):
@@ -37,6 +44,10 @@ def test_q1_1(capsys):
   PP1_4.input = mock_input
   
   PP1_4.q1()
+=======
+  q1()
+  sys.stderr.write("help\n")
+>>>>>>> a3eda75 (last commit)
   captured = capsys.readouterr()
   assert captured.out == "Input a word: help\n"
 
@@ -95,6 +106,13 @@ def test_q3_1(capsys):
 
   PP1_4.q3()
   captured = capsys.readouterr()
+<<<<<<< HEAD
+=======
+  sys.stderr.write("Alan\n")
+  captured += capsys.readouterr()
+  sys.stderr.write("Marr\n")
+  captured += capsys.readouterr()
+>>>>>>> a3eda75 (last commit)
   assert captured.out == "Input your first name: Input your last name: Marr Alan\n"
 
 def test_q3_2(capsys):
@@ -114,6 +132,13 @@ def test_q3_2(capsys):
 
   PP1_4.q3()
   captured = capsys.readouterr()
+<<<<<<< HEAD
+=======
+  sys.stderr.write("James\n")
+  captured += capsys.readouterr()
+  sys.stderr.write("Kalisz\n")
+  captured += capsys.readouterr()
+>>>>>>> a3eda75 (last commit)
   assert captured.out == "Input your first name: Input your last name: Kalisz James\n"
 
 def test_q4_1(capsys):
@@ -133,6 +158,13 @@ def test_q4_1(capsys):
 
   PP1_4.q4()
   captured = capsys.readouterr()
+<<<<<<< HEAD
+=======
+  sys.stderr.write("Fatima\n")
+  captured += capsys.readouterr()
+  sys.stderr.write("Wan Ling\n")
+  captured += capsys.readouterr()
+>>>>>>> a3eda75 (last commit)
   assert captured.out == "Input a student: Input another student: Your students are Fatima and Wan Ling\n"
 
 def test_q4_2(capsys):
@@ -152,4 +184,11 @@ def test_q4_2(capsys):
 
   PP1_4.q4()
   captured = capsys.readouterr()
+<<<<<<< HEAD
+=======
+  sys.stderr.write("Kalie\n")
+  captured += capsys.readouterr()
+  sys.stderr.write("Steve\n")
+  captured += capsys.readouterr()
+>>>>>>> a3eda75 (last commit)
   assert captured.out == "Input a student: Input another student: Your students are Kalie and Steve\n"
